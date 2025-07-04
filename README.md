@@ -14,16 +14,16 @@ Step 1: Clone the Repository
 `cd MORPH-GEN`
 
 Step 2: Create and Activate the Virtual Environment
-
+// You can change "morphgen_env" to any name you prefer
 For Windows:
 
-`python -m venv venv`
+`python -m venv morphgen_env`
 
 `venv\Scripts\activate`
 
 For macOS/Linux
 
-`python3 -m venv venv`
+`python3 -m venv morphgen_env`
 
 `source venv/bin/activate`
 
@@ -32,6 +32,19 @@ Step 3: Install Dependencies
 `pip install --upgrade pip`
 
 `pip install -r requirements.txt`
+
+### Option 2: Using Conda
+Step 1: Clone the Repository
+
+`git clone https://github.com/hikmatkhan/MORPH-GEN.git`
+
+`cd MORPH-GEN`
+
+Step 2: Create and Activate the Virtual Environment
+
+// You can change "morphgen_env" to any name you prefer
+'conda create --name morphgen_env python=3.8'
+'conda activate morphgen_env'
 
 
 
