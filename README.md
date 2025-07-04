@@ -22,9 +22,17 @@ For Windows:
 `venv\Scripts\activate`
 
 For macOS/Linux
+
 `python3 -m venv venv`
 
 `source venv/bin/activate`
+
+Step 3: Install Dependencies
+
+`pip install --upgrade pip`
+
+`pip install -r requirements.txt`
+
 
 
 ## Quick start:
