@@ -7,6 +7,9 @@ MORPH-GEN: Morphology-Guided Representation Alignment for Enhanced Single-Domain
 ## Installation:
 Set up a virtual environment and install dependencies from requirements.txt using either Python's built-in venv or Conda.
 ### Option 1: Using venv (Python Standard Virtual Environment)
+1. Clone the Repository
+2. git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 
 
 
