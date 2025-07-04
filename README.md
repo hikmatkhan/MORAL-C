@@ -77,8 +77,14 @@ pip install -r requirements.txt
 
 
 
+## Training:
+1. Training on CAMELYON Dataset. (Ensure that you have download and preprocess the dataset)
+2. To train the model on a specific hospital data, run the following command with the specific hospital index.
+  ```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-## Quick start:
 1. Install the required packages listed in requirements.txt using `pip install -r requirements.txt`.
 2.
 ## Complete code is coming soon!
