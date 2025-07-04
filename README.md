@@ -9,9 +9,10 @@ Set up a virtual environment and install dependencies from requirements.txt usin
 ### Option 1: Using venv (Python Standard Virtual Environment)
 Step 1: Clone the Repository
 
-`git clone https://github.com/hikmatkhan/MORPH-GEN.git`
-
-`cd MORPH-GEN`
+```bash
+git clone https://github.com/hikmatkhan/MORPH-GEN.git
+cd MORPH-GEN
+bash```
 
 Step 2: Create and Activate the Virtual Environment
 [//]: # (You can change "morphgen_env" to any name you prefer)
