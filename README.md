@@ -31,10 +31,10 @@ Step 2: Create and Activate the Virtual Environment
 (You can change "morphgen_env" to any name you prefer)
 For Windows:
 ```bash
-`python -m venv morphgen_env`
+python -m venv morphgen_env
 
-`venv\Scripts\activate`
-```markdown
+venv\Scripts\activate
+
 For macOS/Linux
 ```bash
 `python3 -m venv morphgen_env`
