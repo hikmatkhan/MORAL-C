@@ -26,7 +26,6 @@ cd MORPH-GEN
 
 
 
-```markdown
 Step 2: Create and Activate the Virtual Environment
 
 (You can change "morphgen_env" to any name you prefer)
