@@ -14,7 +14,7 @@ Step 1: Clone the Repository
 `cd MORPH-GEN`
 
 Step 2: Create and Activate the Virtual Environment
-[//]:  You can change "morphgen_env" to any name you prefer
+[//]: # You can change "morphgen_env" to any name you prefer
 For Windows:
 
 `python -m venv morphgen_env`
