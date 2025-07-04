@@ -1,17 +1,29 @@
 # MORPH-GEN
-MORPH-GEN: Morphology-Guided Representation Alignment for Enhanced Single-Domain Generalization in Histopathological Cancer Classification
 
-## Dataset
+**MORPH-GEN: Morphology-Guided Representation Alignment for Enhanced Single-Domain Generalization in Histopathological Cancer Classification**
 
+---
 
-## Installation:
-Set up a virtual environment and install dependencies from requirements.txt using either Python's built-in venv or Conda.
-### Option 1: Using venv (Python Standard Virtual Environment)
-Step 1: Clone the Repository
+## 📂 Dataset
+
+*Details coming soon...*
+
+---
+
+## 🛠️ Installation
+
+Set up a virtual environment and install dependencies from `requirements.txt` using either Python's built-in `venv` or Conda.
+
+---
+
+### 🔹 Option 1: Using `venv` (Python Standard Virtual Environment)
+
+#### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/hikmatkhan/MORPH-GEN.git
 cd MORPH-GEN
+
 
 
 ```markdown
