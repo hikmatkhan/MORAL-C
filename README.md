@@ -6,7 +6,7 @@
 
 ## 📂 Dataset
 
-*Details coming soon...*
+Details coming soon...
 
 ---
 
@@ -23,29 +23,34 @@ Set up a virtual environment and install dependencies from `requirements.txt` us
 ```bash
 git clone https://github.com/hikmatkhan/MORPH-GEN.git
 cd MORPH-GEN
+```
 
+#### Step 2: Create and Activate the Virtual Environment  
+(You can change `morphgen_env` to any name you prefer.)
 
+For **Windows**:
 
-**Step 2: Create and Activate the Virtual Environment
-
-(You can change "morphgen_env" to any name you prefer)
-For Windows:**
 ```bash
 python -m venv morphgen_env
+morphgen_env\Scripts\activate
+```
 
-venv\Scripts\activate
+For **macOS/Linux**:
 
-For macOS/Linux
 ```bash
-`python3 -m venv morphgen_env`
+python3 -m venv morphgen_env
+source morphgen_env/bin/activate
+```
 
-`source venv/bin/activate`
-```markdown
-Step 3: Install Dependencies
+#### Step 3: Install Dependencies
+
 ```bash
-`pip install --upgrade pip`
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-`pip install -r requirements.txt`
+---
+
 
 ```markdown
 ### Option 2: Using Conda
