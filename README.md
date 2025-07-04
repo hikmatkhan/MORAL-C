@@ -9,6 +9,7 @@ Set up a virtual environment and install dependencies from requirements.txt usin
 ### Option 1: Using venv (Python Standard Virtual Environment)
 1. Clone the Repository
 `git clone https://github.com/your-username/your-repo-name.git`
+
 `cd your-repo-name`
 
 
