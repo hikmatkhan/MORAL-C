@@ -64,7 +64,8 @@ After running all steps, your <OUTPUT_ROOT> directory will contain:
 <pre>  
    OUTPUT_ROOT/ 
       ├── metadata.csv 
-      └── patches/ 
+      └── patches/
+            └──TCGA-A1-A0SK-DX1_xmin45749_ymin25055_MPP-0.2500.png/
          ├── 0001.png 
          ├── 0002.png 
          └── ... 
