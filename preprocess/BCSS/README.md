@@ -1,3 +1,33 @@
+## 🧩 BCSS Data Processing (Adapted from WILDS Package)
+
+This preprocessing pipeline has been adapted from the [WILDS repository](https://github.com/p-lambda/wilds), specifically from their [CAMELYON17 preprocessing code](https://github.com/p-lambda/wilds/tree/main/dataset_preprocessing/camelyon17). It has been modified to work with the [BCSS dataset](https://github.com/PathologyDataScience/BCSS) to extract class-balanced patches from whole slide images (WSIs).
+
+---
+
+### 📦 Requirements
+
+- Make sure OpenCV is installed **before** installing the Python wrapper listed in `requirements.txt`.
+- Official OpenCV installation instructions: [OpenCV Docs](https://docs.opencv.org/4.x/df/d65/tutorial_table_of_content_introduction.html)
+
+---
+
+### ⚙️ Preprocessing Instructions
+
+#### 0️⃣ Download and Prepare Dataset
+
+1. Download the BCSS dataset from [here](https://github.com/PathologyDataScience/BCSS).
+2. Only extract the following folders:
+   - `masks`
+   - `rgbs_colorNormalized`
+3. Rename `rgbs_colorNormalized` to `images`.
+
+Your `<SLIDE_ROOT>` directory should now contain:
+
+
+
+
+
+
 ## BCSS processing using code from WILDS package
 The code here has been taken from the [WILDS package](https://github.com/p-lambda/wilds/tree/main). In particular from [this subdirectory](https://github.com/p-lambda/wilds/tree/main/dataset_preprocessing/camelyon17).
 
