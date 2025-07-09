@@ -48,7 +48,7 @@ source morphgen_env/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
+---
 ### 🔸 Option 2: Using Conda
 
 #### Step 1: Clone the Repository
