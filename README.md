@@ -171,7 +171,7 @@ In the paper, we evaluated model robustness at **two corruption levels**:
 - `severity=1` (low corruption)
 - `severity=2` (moderate corruption)
 
-You can change this in the code:
+You can change this in the code (File: test_noise.py):
 
 ```python
 x_np_corrupted = np.array([
@@ -180,10 +180,9 @@ x_np_corrupted = np.array([
 ```
 To test at severity level 1, simply change severity=2 to severity=1
 
-📂 File: test_noise.py
-This script will:
+This script (test_noise.py) will:
 
-- Load each model checkpoint (e.g., resnet50-h0.pth, resnet50-h1.pth, ...)
+- Load each model checkpoint (e.g., 0.pth, 1.pth, ...)
 
 - Loop through each predefined noise type
 
