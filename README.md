@@ -201,13 +201,13 @@ python test_noise.py --ckpts_path ckpts --data_dir dataset
 
 This guide explains how to generate **Integrated Gradients-based saliency maps** for tumor classification using a ResNet50 model trained on the CAMELYON17 dataset. The script (`saliency_maps.py`) produces visual explanations that highlight the **positive (tumor evidence)** and **negative (non-tumor evidence)** regions in pathology images.
 
----
+
 
 ### 📂 File: `saliency_maps.py`
 
 This script uses [Captum](https://captum.ai/)’s **Integrated Gradients** method to visualize how different parts of an input image contribute to the model's prediction.
 
----
+
 
 ### 🧪 Purpose
 
@@ -228,6 +228,14 @@ This script uses [Captum](https://captum.ai/)’s **Integrated Gradients** metho
       - Generates and overlays saliency maps on a grayscale background.
 
       - Saves the original image, the positive map (green), and the negative map (red) side-by-side.
+
+🧪 Running the Script
+You can simply run:
+```bash
+python saliency_maps.py
+```
+Make sure to update the checkpoint_path, image_dir, and output_dir to match your local paths.
 ---
+
 
 ## Complete code is coming soon!
