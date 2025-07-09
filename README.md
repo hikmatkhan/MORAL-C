@@ -96,11 +96,11 @@ python test.py --ckpts_path checkpoints_directory_path --data_dir complete_camel
 ```
 This script will:
 
-Load each model checkpoint (e.g., 0.pth, 1.pth, etc.)
+- Load each model checkpoint (e.g., 0.pth, 1.pth, etc.)
 
-Evaluate the model on validation or all splits for hospitals 0 to 4
+- Evaluate the model on validation or all splits for hospitals 0 to 4
 
-Print accuracy and confusion matrix per hospital
+- Print accuracy and confusion matrix per hospital
 
 
 ## Complete code is coming soon!
