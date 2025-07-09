@@ -28,6 +28,23 @@ Your `<SLIDE_ROOT>` directory should now contain:
 └── images/
 
 
+---
+
+#### 1️⃣ Generate Patch Coordinates
+
+Run the script to generate potential patch coordinates:
+
+```bash
+python generate_all_patch_coords.py --slide_root <SLIDE_ROOT> --output_root <OUTPUT_ROOT>
+```
+- <SLIDE_ROOT>: Path to the dataset with images/ and masks/
+
+- <OUTPUT_ROOT>: Directory where patch coordinates and outputs will be stored
+
+- Note: If you have metadata.csv already, you can skip this step.
+
+
+
 
 
 ## BCSS processing using code from WILDS package
