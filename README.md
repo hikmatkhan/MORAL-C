@@ -86,7 +86,7 @@ python train.py --config_path PATH_TO_CONFIG --hospital HOSPITAL_ID --data_dir P
 3. Logs will be saved to: training_log.txt
 4. Best model checkpoint will be saved to: ckpts/resnet50/0.pth (if hospital 0)
 
-## Testing:
+## 🧪 Testing:
 ### Testing on CAMELYON Dataset
 This section explains how to evaluate trained models on the [CAMELYON17](https://camelyon17.grand-challenge.org/) dataset using the provided evaluation script.
 
@@ -102,7 +102,7 @@ This script will:
 
 - Print accuracy and confusion matrix per hospital
 
-### Testing on BCSS Dataset
+###  Testing on BCSS Dataset
 This section explains how to evaluate trained models on the BCSS dataset using the provided evaluation script.
 
 Use the following command to run evaluation on all models:
@@ -117,6 +117,13 @@ This script will:
 - Evaluate the model on BCSS dataset
 
 - Print accuracy and confusion matrix
+
+### Testing on OCELOT Dataset
+This script evaluates trained models on the [OCELOT dataset](https://zenodo.org/record/10621217) across multiple organs (bladder, endometrium, head-and-neck, kidney, prostate, stomach).
+
+```bash
+python test_ocelot.py --ckpts_path ./ckpts --image_folder OCELOT_data
+```
 
 
 ## Complete code is coming soon!
