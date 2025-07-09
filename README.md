@@ -221,11 +221,11 @@ This script uses [Captum](https://captum.ai/)’s **Integrated Gradients** metho
 
 3. For each image:
 
-      -- Resizes and normalizes it for inference.
+      - Resizes and normalizes it for inference.
 
-      -- Applies Integrated Gradients using Captum.
+      - Applies Integrated Gradients using Captum.
 
-      -- Generates and overlays saliency maps on a grayscale background.
+      - Generates and overlays saliency maps on a grayscale background.
 
 Saves the original image, the positive map (green), and the negative map (red) side-by-side.
 ---
