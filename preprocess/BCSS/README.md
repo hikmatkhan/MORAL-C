@@ -66,9 +66,14 @@ After running all steps, your <OUTPUT_ROOT> directory will contain:
       ├── metadata.csv 
       └── patches/
             └──TCGA-A1-A0SK-DX1_xmin45749_ymin25055_MPP-0.2500.png/
-         ├── 0001.png 
-         ├── 0002.png 
-         └── ... 
+               ├── patch_TCGA-A1-A0SK-DX1_xmin45749_ymin25055_MPP-0.2500.png_x_450_y_450.png 
+               ├── patch_TCGA-A1-A0SK-DX1_xmin45749_ymin25055_MPP-0.2500.png_x_450_y_540.png 
+               └── ... 
+            └──TCGA-A1-A0SP-DX1_xmin6798_ymin53719_MPP-0.2500.png/
+               ├── patch_TCGA-A1-A0SP-DX1_xmin6798_ymin53719_MPP-0.2500.png_x_450_y_450.png
+               ├── patch_TCGA-A1-A0SP-DX1_xmin6798_ymin53719_MPP-0.2500.png_x_450_y_540.png 
+               └── ... 
+            └── ...
 </pre>
 
 These patches can now be used for training and evaluation in your classification or segmentation pipelines.
