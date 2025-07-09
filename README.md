@@ -107,7 +107,7 @@ This section explains how to evaluate trained models on the BCSS dataset using t
 
 Use the following command to run evaluation on all models:
 ```bash
-python evaluate_bcss.py --ckpts_path ./ckpts --image_folder ./preprocessed_BCSS_data_path
+python test_bcss.py --ckpts_path ./ckpts --image_folder ./preprocessed_BCSS_data_path
 
 ```
 This script will:
