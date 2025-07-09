@@ -23,7 +23,9 @@ This preprocessing pipeline has been adapted from the [WILDS repository](https:/
 
 Your `<SLIDE_ROOT>` directory should now contain:
 
-
+<SLIDE_ROOT>/
+├── masks/
+└── images/
 
 
 
