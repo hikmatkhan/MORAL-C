@@ -234,7 +234,8 @@ You can simply run:
 ```bash
 python saliency_maps.py
 ```
-Make sure to update the checkpoint_path, image_dir, and output_dir to match your local paths.
+Make sure to update the `checkpoint_path`, `image_dir`, and `output_dir` to match your local paths.
+
 ---
 
 
