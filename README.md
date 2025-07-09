@@ -85,4 +85,22 @@ python train.py --config_path PATH_TO_CONFIG --hospital HOSPITAL_ID --data_dir P
 ```
 3. Logs will be saved to: training_log.txt
 4. Best model checkpoint will be saved to: ckpts/resnet50/0.pth (if hospital 0)
+
+## Testing:
+### Testing on CAMELYON Dataset
+This section explains how to evaluate trained models on the [CAMELYON17](https://camelyon17.grand-challenge.org/) dataset using the provided evaluation script.
+
+Use the following command to run evaluation on all models:
+```bash
+python test.py --ckpts_path checkpoints_directory_path --data_dir complete_camelyon_data
+```
+This script will:
+
+Load each model checkpoint (e.g., 0.pth, 1.pth, etc.)
+
+Evaluate the model on validation or all splits for hospitals 0 to 4
+
+Print accuracy and confusion matrix per hospital
+
+
 ## Complete code is coming soon!
