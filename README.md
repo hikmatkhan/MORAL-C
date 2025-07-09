@@ -122,8 +122,20 @@ This script will:
 This script evaluates trained models on the [OCELOT dataset](https://zenodo.org/record/10621217) across multiple organs (bladder, endometrium, head-and-neck, kidney, prostate, stomach).
 
 ```bash
-python test_ocelot.py --ckpts_path ./ckpts --image_folder OCELOT_data
+python test_ocelot.py --ckpts_path ckpts --image_folder OCELOT_data
 ```
+This will automatically loop through all six organ types:
 
+- bladder
+
+- endometrium
+
+- head-and-neck
+
+- kidney
+
+- prostate
+
+- stomach
 
 ## Complete code is coming soon!
