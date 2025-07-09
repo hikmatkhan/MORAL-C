@@ -43,9 +43,12 @@ python generate_all_patch_coords.py --slide_root <SLIDE_ROOT> --output_root <OUT
 
 - Note: If you have metadata.csv already, you can skip this step.
 
-
-
-
+#### 2️⃣ Select Balanced Patches
+Create a class-balanced selection of patches using:
+```bash
+python generate_final_metadata.py --output_root <OUTPUT_ROOT>
+```
+Note: This step can also be skipped if you're using a provided metadata.csv.
 
 ## BCSS processing using code from WILDS package
 The code here has been taken from the [WILDS package](https://github.com/p-lambda/wilds/tree/main). In particular from [this subdirectory](https://github.com/p-lambda/wilds/tree/main/dataset_preprocessing/camelyon17).
