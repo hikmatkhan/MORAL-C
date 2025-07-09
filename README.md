@@ -180,6 +180,23 @@ You can change this in the code:
 x_np_corrupted = np.array([
     corrupt(img, severity=2, corruption_name=c_name) for img in x_np
 ])
+```
+To test at severity level 1, simply change severity=2 to severity=1
 
+📂 File: test_noise.py
+This script will:
+
+- Load each model checkpoint (e.g., resnet50-h0.pth, resnet50-h1.pth, ...)
+
+- Loop through each predefined noise type
+
+- Apply noise to every input batch using corrupt(...)
+
+- Evaluate performance (accuracy + confusion matrix) on hospitals 0 to 4
+▶️ Running the Script
+
+```bash
+python test_noise.py --ckpts_path ckpts --data_dir dataset
+```
 
 ## Complete code is coming soon!
