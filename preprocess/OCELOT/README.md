@@ -47,8 +47,27 @@ python extract_initial_patches.py
 Make sure to update the paths inside the __main__ block of the script to point to:
 
 - metadata.json (provided)
-
 - wsis/ folder (contains downloaded TCGA images)
+
+### 🧪 Patch Processing (Same as BCSS or CAMELYON17)
+Once patches are extracted, continue as follows:
+#### 1️⃣ Generate All Potential Patch Coordinates
+```bash
+python generate_all_patch_coords.py --slide_root <SLIDE_ROOT> --output_root <OUTPUT_ROOT>
+```
+This will generate a .csv file with all possible patch locations.
+
+✅ You can skip this step if you're using the pre-generated metadata.csv.
+
+#### 2️⃣ Create Balanced Metadata
+```bash
+python generate_final_metadata.py --output_root <OUTPUT_ROOT>
+```
+Selects a class-balanced subset of patches for training and evaluation.
+
+✅ This step is also optional if using the provided metadata.csv.
+
+
 
 
 
