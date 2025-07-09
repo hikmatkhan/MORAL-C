@@ -67,8 +67,11 @@ Selects a class-balanced subset of patches for training and evaluation.
 
 ✅ This step is also optional if using the provided metadata.csv.
 
-
-
+### 3️⃣ Extract Final Patch Images
+```bash
+python extract_final_patches_to_disk.py --slide_root <SLIDE_ROOT> --output_root <OUTPUT_ROOT>
+```
+This extracts final image crops from WSIs using the filtered metadata.
 
 
 
