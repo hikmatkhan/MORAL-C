@@ -102,5 +102,21 @@ This script will:
 
 - Print accuracy and confusion matrix per hospital
 
+### Testing on BCSS Dataset
+This section explains how to evaluate trained models on the BCSS dataset using the provided evaluation script.
+
+Use the following command to run evaluation on all models:
+```bash
+python evaluate_bcss.py --ckpts_path ./ckpts --image_folder ./preprocessed_BCSS_data_path
+
+```
+This script will:
+
+- Load each model checkpoint (e.g., 0.pth, 1.pth, etc.)
+
+- Evaluate the model on BCSS dataset
+
+- Print accuracy and confusion matrix
+
 
 ## Complete code is coming soon!
