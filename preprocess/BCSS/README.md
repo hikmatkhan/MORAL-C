@@ -61,11 +61,11 @@ After running all steps, your <OUTPUT_ROOT> directory will contain:
 
 <pre>  
    <OUTPUT_ROOT>/ 
-   ├── metadata.csv 
-   └── patches/ 
-      ├── 0001.png 
-      ├── 0002.png 
-      └── ... 
+      ├── metadata.csv 
+      └── patches/ 
+         ├── 0001.png 
+         ├── 0002.png 
+         └── ... 
 </pre>
 
 These patches can now be used for training and evaluation in your classification or segmentation pipelines.
