@@ -60,7 +60,7 @@ This will crop the patches from the whole slide images and save them to disk.
 After running all steps, your <OUTPUT_ROOT> directory will contain:
 
 <pre>  
-   /<OUTPUT_ROOT>/ 
+   OUTPUT_ROOT/ 
       ├── metadata.csv 
       └── patches/ 
          ├── 0001.png 
