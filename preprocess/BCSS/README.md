@@ -50,6 +50,17 @@ python generate_final_metadata.py --output_root <OUTPUT_ROOT>
 ```
 Note: This step can also be skipped if you're using a provided metadata.csv.
 
+#### 3️⃣ Extract Patches to Disk
+Extract image patches and save them locally using the filtered metadata:
+```bash
+python extract_final_patches_to_disk.py --slide_root <SLIDE_ROOT> --output_root <OUTPUT_ROOT>
+```
+This will crop the patches from the whole slide images and save them to disk.
+
+
+
+
+
 ## BCSS processing using code from WILDS package
 The code here has been taken from the [WILDS package](https://github.com/p-lambda/wilds/tree/main). In particular from [this subdirectory](https://github.com/p-lambda/wilds/tree/main/dataset_preprocessing/camelyon17).
 
