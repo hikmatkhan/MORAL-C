@@ -62,7 +62,7 @@ cd MORPH-GEN
 (You can change `morphgen_env` to any name you prefer.)
 
 ```bash
-conda create --name morphgen_env python=3.8
+conda create --name morphgen_env python=3.9
 conda activate morphgen_env
 ```
 
