@@ -59,13 +59,13 @@ This will crop the patches from the whole slide images and save them to disk.
 
 After running all steps, your <OUTPUT_ROOT> directory will contain:
 
-<pre> ``` 
+<pre>  
    <OUTPUT_ROOT>/ 
    ├── metadata.csv 
    └── patches/ 
       ├── 0001.png 
       ├── 0002.png 
-      └── ... ``` 
+      └── ... 
 </pre>
 
 These patches can now be used for training and evaluation in your classification or segmentation pipelines.
