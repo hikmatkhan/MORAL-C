@@ -4,6 +4,23 @@
 
 ---
 
+## 📚 Table of Contents
+
+- [📂 Dataset](#-dataset)
+- [🛠️ Installation](#️-installation)
+  - [🔹 Option 1: Using venv](#-option-1-using-venv-python-standard-virtual-environment)
+  - [🔸 Option 2: Using Conda](#-option-2-using-conda)
+- [🧠 Training](#-training)
+- [🧪 Testing](#-testing)
+  - [Testing on CAMELYON Dataset](#testing-on-camelyon-dataset)
+  - [Testing on BCSS Dataset](#testing-on-bcss-dataset)
+  - [Testing on OCELOT Dataset](#testing-on-ocelot-dataset)
+- [🔊 Robustness Evaluation with Image Corruptions (CAMELYON17)](#-robustness-evaluation-with-image-corruptions-camelyon17)
+- [🧠 Visualizing Model Interpretability using Saliency Maps](#-visualizing-model-interpretability-using-saliency-maps)
+- [📦 Complete code is coming soon!](#complete-code-is-coming-soon)
+
+---
+
 ## 📂 Dataset
 
 Details coming soon...
