@@ -227,7 +227,7 @@ This script uses [Captum](https://captum.ai/)’s **Integrated Gradients** metho
 
       - Generates and overlays saliency maps on a grayscale background.
 
-Saves the original image, the positive map (green), and the negative map (red) side-by-side.
+      - Saves the original image, the positive map (green), and the negative map (red) side-by-side.
 ---
 
 ## Complete code is coming soon!
