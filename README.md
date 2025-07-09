@@ -232,7 +232,7 @@ This script uses [Captum](https://captum.ai/)’s **Integrated Gradients** metho
 - To understand what regions in a pathology image the model focuses on when predicting tumor presence.
 - Provides **green-highlighted areas** for positive contributions (tumor evidence) and **red-highlighted areas** for negative contributions (non-tumor evidence).
 
-###🧾 How It Works
+### 🧾 How It Works
 1. Loads a trained ResNet50 model and its checkpoint.
 
 2. Reads all .png images from a specified folder.
