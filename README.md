@@ -138,4 +138,48 @@ This will automatically loop through all six organ types:
 
 - stomach
 
+## 🔊 Robustness Evaluation with Image Corruptions (CAMELYON17)
+This script (`test_noise.py`) evaluates the robustness of trained models on the **CAMELYON17 dataset** under various types of noise corruptions applied during inference.
+
+The noise types and corruption process are adapted using the `corrupt()` function from the [ImageNet-C benchmark](https://github.com/hendrycks/robustness) to simulate real-world degradation such as blur, compression, and sensor noise.
+
+---
+### 🧪 Objective
+
+To assess how well models generalize under different visual corruptions during inference time.  
+This is important for evaluating **robustness in clinical deployment**, where imaging artifacts may exist.
+
+---
+
+### 💾 Noise Types Applied
+
+The following types of corruptions are applied to each input image before passing them to the model:
+
+- `shot_noise`
+- `gaussian_noise`
+- `impulse_noise`
+- `defocus_blur`
+- `jpeg_compression`
+- `motion_blur`
+- `snow`
+- `elastic_transform`
+
+---
+### 🔧 Severity Levels
+
+The severity of each noise is controlled using the `severity` parameter in the `corrupt()` function.
+
+In the paper, we evaluated model robustness at **two corruption levels**:
+
+- `severity=1` (low corruption)
+- `severity=2` (moderate corruption)
+
+You can change this in the code:
+
+```python
+x_np_corrupted = np.array([
+    corrupt(img, severity=2, corruption_name=c_name) for img in x_np
+])
+
+
 ## Complete code is coming soon!
