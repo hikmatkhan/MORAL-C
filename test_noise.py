@@ -91,30 +91,30 @@ def evaluate_model(model, dataloader, c_name="None"):
 
     with torch.no_grad():
         disable_progress = not sys.stdout.isatty()
-        progress_bar = tqdm(dataloader, desc="Evaluating", unit="batch", disable=disable_progress)  # ✅ Add progress bar
+        progress_bar = tqdm(dataloader, desc="Evaluating", unit="batch", disable=disable_progress)  #  Add progress bar
 
         for batch_idx, data in enumerate(progress_bar):
             try:
                 (x, _), labels, _ = data
 
-                # ✅ Ensure correct shape: Convert to NumPy & Permute (CHW → HWC)
+                # Ensure correct shape: Convert to NumPy & Permute (CHW → HWC)
                 x_np = x.permute(0, 2, 3, 1).cpu().numpy()  # (N, C, H, W) → (N, H, W, C)
 
-                # ✅ Fix: Convert [0,1] range to [0,255]
+                
                 if x_np.max() <= 1.0:  
                     x_np = (x_np * 255).astype(np.uint8)
 
                 x_np = np.array([np.array(Image.fromarray(img).resize((224, 224))) for img in x_np])
 
-                # ✅ Apply corruption
+                #  Apply corruption
                 x_np_corrupted = np.array([
                     corrupt(img, severity=2, corruption_name=c_name) for img in x_np
                 ])
 
-                # ✅ Ensure valid range and uint8 format
+                
                 x_np_corrupted = np.clip(x_np_corrupted, 0, 255).astype(np.uint8)
 
-                # ✅ Convert back to tensor & normalize for model inference
+                
                 x = torch.tensor(x_np_corrupted).permute(0, 3, 1, 2).to(cuda_device, dtype=torch.float32) / 255.0  
 
                 labels = labels.unsqueeze(1).float()
@@ -122,7 +122,7 @@ def evaluate_model(model, dataloader, c_name="None"):
                 preds = outputs > 0.5
                 confusion_mat += confusion_matrix(labels.cpu(), preds.cpu(), labels=[0, 1])
 
-                # ✅ Compute real-time accuracy
+                #  Compute real-time accuracy
                 acc = np.sum(np.diag(confusion_mat)) / np.sum(confusion_mat)
                 progress_bar.set_postfix({"Accuracy": f"{100 * acc:.2f}%"})
 
@@ -131,7 +131,7 @@ def evaluate_model(model, dataloader, c_name="None"):
                 total_skipped += 1
                 continue  # Skip problematic batch
 
-    # ✅ Final Accuracy Calculation
+    #  Final Accuracy Calculation
     acc = np.sum(np.diag(confusion_mat)) / np.sum(confusion_mat)
 
     print("\nFinal Evaluation Results:")
