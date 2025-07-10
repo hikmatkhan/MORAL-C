@@ -17,7 +17,7 @@
   - [Testing on OCELOT Dataset](#testing-on-ocelot-dataset)
 - [🔊 Robustness Evaluation with Image Corruptions (CAMELYON17)](#-robustness-evaluation-with-image-corruptions-camelyon17)
 - [🧠 Visualizing Model Interpretability using Saliency Maps](#-visualizing-model-interpretability-using-saliency-maps)
-- [📦 Complete code is coming soon!](#complete-code-is-coming-soon)
+
 
 ---
 
@@ -255,6 +255,3 @@ python saliency_maps.py
 Make sure to update the `checkpoint_path`, `image_dir`, and `output_dir` to match your local paths.
 
 ---
-
-
-## Complete code is coming soon!
