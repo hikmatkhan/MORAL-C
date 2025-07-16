@@ -20,4 +20,9 @@ config = {
     'TOTAL_EPOCHS': 50,
     'DISTANCE_WEIGHT': 1,  # The parameter lambda in the paper
     'DISTANCE_START_EPOCH': 5,  # Should be set to an epoch when model starts predicting normally again
+    'USE_SWA': True,
+    'SWA_START': 10,       # Epoch to start SWA
+    'SWA_LR': 0.05,        # SWA learning rate
+    'SWA_FREQ': 1,         # SWA update frequency
+
 }
