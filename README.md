@@ -15,6 +15,7 @@
   - [Testing on CAMELYON Dataset](#testing-on-camelyon-dataset)
   - [Testing on BCSS Dataset](#testing-on-bcss-dataset)
   - [Testing on OCELOT Dataset](#testing-on-ocelot-dataset)
+- [💾 Trained Models (.pth)](#-trained-model-pth)
 - [🔊 Robustness Evaluation with Image Corruptions (CAMELYON17)](#-robustness-evaluation-with-image-corruptions-camelyon17)
 - [🧠 Visualizing Model Interpretability using Saliency Maps](#-visualizing-model-interpretability-using-saliency-maps)
 
@@ -23,7 +24,8 @@
 
 ## 📂 Dataset
 
-Details coming soon...
+In the `preprocess` folder, you will find the dataset download links and preprocessing scripts.
+
 
 ---
 
@@ -155,6 +157,21 @@ This will automatically loop through all six organ types:
 - prostate
 
 - stomach
+---
+
+## 💾 Trained Models (.pth)
+
+The repository provides pre-trained model checkpoints stored in the ckpt/ folder:
+```bash
+ckpt/
+  withaug/    # Models trained with data augmentation
+    0.pth  1.pth  2.pth  3.pth  4.pth
+  noaug/      # Models trained without data augmentation
+    0.pth  1.pth  2.pth  3.pth  4.pth
+```
+⚠️ Note: Large .pth files are stored using Git LFS.
+Ensure that Git LFS is installed to properly clone or pull the checkpoints.
+
 ---
 
 ## 🔊 Robustness Evaluation with Image Corruptions (CAMELYON17)
