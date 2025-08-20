@@ -287,3 +287,9 @@ url = {https://github.com/hikmatkhan/MORPH-GEN}
 
 }
 ```
+
+## 🙏 Acknowledgments
+
+- The datasets used in this work are from **CAMELYON17**, **BCSS**, and **OCELOT**.  
+- Our implementation builds upon open-source contributions from [PyTorch](https://pytorch.org/) and [Captum](https://captum.ai/).  
+- We thank the research community for providing publicly available benchmarks that made this work possible.
