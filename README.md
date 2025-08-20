@@ -272,3 +272,18 @@ python saliency_maps.py
 Make sure to update the `checkpoint_path`, `image_dir`, and `output_dir` to match your local paths.
 
 ---
+
+## 📑 Citation
+
+If you use **MORPH-GEN** or its trained weights in your research, please cite our work:
+
+```bibtex
+@article{MorphGen2025,
+title = {MORPH-GEN: Morphology-Guided Representation Alignment for Enhanced Single-Domain Generalization in Histopathological Cancer Classification},
+author = {Khan, Hikmat and Zaidi, Syed Farhan Alam and others},
+journal = {Under Review / Preprint},
+year = {2025},
+url = {https://github.com/hikmatkhan/MORPH-GEN}
+
+}
+```
