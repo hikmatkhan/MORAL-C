@@ -1,6 +1,6 @@
 # MORPH-GEN
 
-**MORPH-GEN: Morphology-Guided Representation Alignment for Enhanced Single-Domain Generalization in Histopathological Cancer Classification**
+**MORPH-GEN: Morphology-Guided Representation Learning for Enhanced Single-Domain Generalization in Histopathological Cancer Classification**
 
 ---
 
