@@ -283,7 +283,8 @@ title = {MORPH-GEN: Morphology-Guided Representation Alignment for Enhanced Sing
 author = {Khan, Hikmat and Zaidi, Syed Farhan Alam and others},
 journal = {Under Review / Preprint},
 year = {2025},
-url = {https://github.com/hikmatkhan/MORPH-GEN}
+url = {https://github.com/hikmatkhan/MorphGen}
+
 
 }
 ```
