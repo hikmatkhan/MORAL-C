@@ -170,9 +170,7 @@ def sup_contrast_with_mask(x_embeddings, mask_embeddings, margin=1.0):
 
 
 def sup_contrast_with_mask_cosine(x_embeddings, mask_embeddings, margin=0.3):
-    """
-    Contrastive loss using cosine similarity.
-    """
+
     batch_size = x_embeddings.size(0)
     device = x_embeddings.device
 
