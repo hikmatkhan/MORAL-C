@@ -215,7 +215,7 @@ def run_epoch(model, config, dataloader, epoch, optimizer, scheduler):
 
         if batch_idx % 100 == 0 or batch_idx == len(dataloader) - 1:
             print(f'RE:{batch_idx:04}\t{[round(l.item(), 6) for l in (x_loss, masks_loss, dist_loss_l4)]}', flush=True)
-    # scheduler.step()  # SWA handles scheduler stepping
+    
 
 
 def run_baseline_epoch(model, dataloader, epoch, optimizer, scheduler):
