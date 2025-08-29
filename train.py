@@ -142,7 +142,7 @@ def train(config_path, train_hospital, data_dir):
     print(f'\n\nBest epoch: {best_epoch}, accuracy: {best_accuracy}\n')
     print('Model saved at:', model_path)
 
-    # --- SWA Finalization ---
+    
     if use_swa:
         print("Updating BatchNorm statistics for SWA model and evaluating...")
         update_bn(dataloader, swa_model, device=cuda_device)
@@ -235,7 +235,7 @@ def run_baseline_epoch(model, dataloader, epoch, optimizer, scheduler):
 
         if batch_idx % 100 == 0 or batch_idx == len(dataloader) - 1:
             print(f'BRE: {batch_idx:04}\t{round(x_loss.item(), 6)}', flush=True)
-    # scheduler.step()  # SWA handles scheduler stepping
+  
 
 
 def save_checkpoint(file_name, model, root_dir):
