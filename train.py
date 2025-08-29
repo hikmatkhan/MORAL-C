@@ -153,10 +153,7 @@ def train(config_path, train_hospital, data_dir):
 
 
 def sup_contrast_with_mask(x_embeddings, mask_embeddings, margin=1.0):
-    """
-    Vectorized contrastive loss using all negative pairs.
-    Positive: (X_i, M_i); Negative: (X_j, M_i) for all j ≠ i
-    """
+
     batch_size = x_embeddings.size(0)
     device = x_embeddings.device
 
